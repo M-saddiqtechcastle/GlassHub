@@ -1,0 +1,132 @@
+:root {
+  font-size: 16px !important;
+  font-size: 0.9em !important;
+  --primary-color1: #7ac133;
+  --primary-color1-rgb: 122, 193, 51;
+  --primary-color2: #3a4454;
+  --primary-color2-rgb: 58, 68, 84;
+  --neutral-color1: #53687e;
+  --neutral-color1-rgb: 83, 104, 126;
+  --neutral-color2: #515459;
+  --neutral-color2-rgb: 81, 84, 89;
+  --accent-color1: #efca58;
+  --accent-color1-rgb: 239, 202, 88;
+  --accent-color2: #6b4e71;
+  --accent-color2-rgb: 107, 78, 113;
+  --semantic-color1: #46b29e;
+  --semantic-color1-rgb: 70, 178, 158;
+  --semantic-color2: #ee3a59;
+  --semantic-color2-rgb: 238, 58, 89;
+  --grey-light: #e7e6e6;
+  --grey-light-rgb: 231, 230, 230;
+  --grey-dark: #515459;
+  --grey-dark-rgb: 81, 84, 89;
+  --white: #ffffff;
+
+  --eblack: #252422;
+  --flame: #eb5e28;
+  --grey1: #F3F3F2;
+  --grey2: #e0e0df;
+  --grey3: #cccccb;
+  --grey4: #aeaeae;
+  --grey5: #8e8d8c;
+  --grey6: #6f6e6c;
+  --primaryblue: #0572BE;
+  --primaryblue-rgb: 5, 114, 190;
+  --secondarygrey: #6c757d;
+  --secondarygrey-rgb: 108, 117, 125;
+
+  --cardborder-rgb: rgba(132,149,171, 0.25);
+
+
+    --bs-primary: var(--primaryblue);
+    --bs-secondary: var(--secondarygrey);
+    --bs-success: var(--semantic-color1);
+    --bs-info: var(--neutral-color1);
+    --bs-warning: var(--accent-color1);
+    --bs-danger: var(--semantic-color2);
+    --bs-pink: #e83e8c;
+    --bs-light: #f5f6f8;
+    --bs-dark: #141b2b;
+    --bs-white: #fff;
+    --bs-purple: #3b76e1;
+    --bs-primary-rgb: var(--primaryblue-rgb);
+    --bs-secondary-rgb: var(--secondarygrey-rgb);
+    --bs-success-rgb: var(--semantic-color1-rgb);
+    --bs-info-rgb: var(--neutral-color1-rgb);
+    --bs-warning-rgb: var(--accent-color1-rgb);
+    --bs-danger-rgb: var(--semantic-color2-rgb);
+    --bs-pink-rgb: 232, 62, 140;
+    --bs-light-rgb: 245, 246, 248;
+    --bs-dark-rgb: 20, 27, 43;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-purple-rgb: 59, 118, 225;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+
+}
+
+html, body {
+  height: 100vh;
+}
+
+.btn-warning {
+  color: var(--bs-dark) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fa-125x {
+  font-size: 1.25em;
+}
+
+.fa-15x {
+  font-size: 1.5em;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.hrSpacer {
+  border: 0px;
+  margin: 1.15rem 0;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #545965 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #545965;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+
+
+
+//Stacking Card
+@for $i from 2 through 50 {
+  .stackingcard:nth-child(#{$i}n) {
+    top: $i * 3em - 3em;
+  }
+}
